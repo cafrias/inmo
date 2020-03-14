@@ -2,10 +2,15 @@
   "name": "@inmo/engine",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "scripts": {
+    "install": "tsc --build tsconfig.json",
+    "build": "tsc --build tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Carlos Frias <carlos.a.frias@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
 }

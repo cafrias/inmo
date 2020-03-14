@@ -21,6 +21,7 @@
   "dependencies": {
     "apollo-server": "^2.11.0",
     "graphql": "^14.6.0",
-    "sequelize": "^5.21.5"
+    "sequelize": "^5.21.5",
+    "@inmo/engine": "^1.0.0"
   }
 }

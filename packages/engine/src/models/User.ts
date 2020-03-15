@@ -3,21 +3,18 @@ import Entity, { EntityConstructorInput } from "./Entity";
 interface UserConstructorInput extends EntityConstructorInput {
   name: string;
   email: string;
-  password: string;
   phone?: string;
 }
 
 export default class User extends Entity {
   private name: string;
   private email: string;
-  private password: string;
   private phone?: string;
 
   constructor(input: UserConstructorInput) {
     super(input);
     this.name = input.name;
     this.email = input.email;
-    this.password = input.password;
     this.phone = input.phone;
   }
 
@@ -35,14 +32,6 @@ export default class User extends Entity {
 
   public setEmail(email: string) {
     this.email = email;
-  }
-
-  public getPassword() {
-    return this.password;
-  }
-
-  public setPassword(password: string) {
-    this.password = password;
   }
 
   public getPhone() {

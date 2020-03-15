@@ -71,6 +71,13 @@ const typeDefs = gql`
     name: String!
   }
 
+  input CreateUserInput {
+    name: String!
+    email: String!
+    password: String!
+    phone: String
+  }
+
   # -------------------------------------------
   # Query
   # -------------------------------------------
@@ -79,6 +86,13 @@ const typeDefs = gql`
 
     offers: [Offer!]!
     offer(id: ID!): Offer
+  }
+
+  # -------------------------------------------
+  # Mutation
+  # -------------------------------------------
+  type Mutation {
+    createUser(input: CreateUserInput!): User!
   }
 `;
 

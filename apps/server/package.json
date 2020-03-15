@@ -8,6 +8,7 @@
     "debug": "babel-node inspect src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "db:migrate": "sequelize-cli db:migrate",
+    "db:migrate:undo": "sequelize-cli db:migrate:undo",
     "db:generate:migration": "sequelize-cli db:generate:migration"
   },
   "keywords": [],
@@ -24,6 +25,7 @@
   "dependencies": {
     "@inmo/engine": "^0.1.0",
     "apollo-server": "^2.11.0",
+    "bcrypt": "^4.0.1",
     "dotenv": "^8.2.0",
     "graphql": "^14.6.0",
     "pg": "^7.18.2",

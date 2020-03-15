@@ -33,7 +33,6 @@ export const users = {
   molly: new User({
     id: "molly",
     name: "molly",
-    email: "molly@example.com",
-    password: "molly123"
+    email: "molly@example.com"
   })
 };
